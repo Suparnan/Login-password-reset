@@ -33,7 +33,7 @@ function Resetform() {
         signupData(userData)
             .then((res) => {
                 history.push("/login");
-                toast.success("Saved Successfully");
+                toast.success("Password Reset Successful");
                 setUserData({
                     password: "",
                 })
