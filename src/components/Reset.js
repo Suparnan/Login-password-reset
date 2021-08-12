@@ -31,7 +31,7 @@ function Reset() {
         console.log(userData);
         postResetData(userData)
             .then((res) => {
-                history.push("/login");
+                history.push("/resetval");
                 toast.success("Reset link sent to your registered email, Please check your spam also");
                 setUserData({
                     email: "",
