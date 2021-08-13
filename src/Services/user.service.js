@@ -6,10 +6,6 @@ const postResetData = (myData) => {
     return axios.post(API_URL+"reset", myData);
 }
 
-const postResetValidateData = (myData) => {
-    return axios.post(API_URL+"resetval", myData);
-}
-
 const postResetFormData = (myData) => {
     return axios.post(API_URL+"resetform", myData);
 }
@@ -22,6 +18,6 @@ const getLoginData = (myData) => {
     return axios.post(API_URL+"login", myData)
 }
 
-export { postResetData, postResetValidateData, postResetFormData, getLoginData, signupData }
+export { postResetData, postResetFormData, getLoginData, signupData }
 
 //validateLoginData, validateSignupData
