@@ -10,6 +10,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 const initialState = {
+    passcode: "",
     password: "",
     confirmpassword: "",
 }
@@ -49,7 +50,7 @@ function Resetform() {
                 <Form>
                     <Form.Group as={Row} className="mb-3" controlId="formBasicUsername">
                         <h3>
-                            Reset Form
+                          Password Reset Form
                         </h3>
                         <br />
                         <br />
@@ -57,10 +58,10 @@ function Resetform() {
                         <br />
 
                         <Col sm={4}>
-                        <Form.Label column sm="2">Username</Form.Label>
+                        <Form.Label column sm="2">Passcode</Form.Label>
                         </Col>
                         <Col sm={5}>
-                            <Form.Control type="text" value={userData.username} name="username" placeholder="Enter your Name" onChange={handleChange} />
+                            <Form.Control type="text" value={userData.passcode} name="passcode" placeholder="Enter Passcode" onChange={handleChange} />
                         </Col>
                         </Form.Group>
 
@@ -69,7 +70,7 @@ function Resetform() {
                         <Form.Label column sm="2">Password</Form.Label>
                         </Col>
                         <Col sm={5}>
-                            <Form.Control type="password" value={userData.password} name="password" placeholder="Enter your Password" onChange={handleChange} />
+                            <Form.Control type="password" value={userData.password} name="password" placeholder="Enter new Password" onChange={handleChange} />
                         </Col>
                         </Form.Group>
 
@@ -78,7 +79,7 @@ function Resetform() {
                         <Form.Label column sm="5">Confirm Password</Form.Label>
                         </Col>
                         <Col sm={5}>
-                            <Form.Control type="password" value={userData.confirmpassword} name="confirmpassword" placeholder="Confirm your Password" onChange={handleChange} />
+                            <Form.Control type="password" value={userData.confirmpassword} name="confirmpassword" placeholder="Confirm new Password" onChange={handleChange} />
                         </Col>
 
                     </Form.Group>
