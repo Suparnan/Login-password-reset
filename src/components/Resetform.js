@@ -31,7 +31,7 @@ function Resetform() {
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log(userData);
-        postResetFormData(userData)
+        signupData(userData)
             .then((res) => {
                 history.push("/login");
                 toast.success("Password Reset Successful");
