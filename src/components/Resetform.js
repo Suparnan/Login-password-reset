@@ -1,6 +1,6 @@
 import { react, useState } from "react";
 // import { validateSignupData } from "../Services/user.service.js";
-import { signupData } from "../Services/user.service.js";
+import { postResetFormData } from "../Services/user.service.js";
 import { toast } from "react-toastify";
 import { Link, useHistory } from "react-router-dom";
 import Container from 'react-bootstrap/Container';
